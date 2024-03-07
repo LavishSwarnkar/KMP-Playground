@@ -6,6 +6,19 @@ plugins {
     `maven-publish`
 }
 
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("maven") {
+                from (components["kotlin"])
+                groupId = "in.streamliners.lib"
+                artifactId = "lib"
+                version = "1.0"
+            }
+        }
+    }
+}
+
 kotlin {
     androidTarget { publishLibraryVariants("release") }
 
