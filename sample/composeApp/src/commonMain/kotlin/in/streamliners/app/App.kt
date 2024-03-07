@@ -36,6 +36,7 @@ import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
 import `in`.streamliners.app.theme.AppTheme
 import `in`.streamliners.app.theme.LocalThemeIsDark
+import `in`.streamliners.lib.SuperComposable
 
 @Composable
 internal fun App() = AppTheme {
@@ -53,6 +54,8 @@ internal fun App() = AppTheme {
                 style = MaterialTheme.typography.titleMedium,
                 modifier = Modifier.padding(16.dp)
             )
+
+            SuperComposable()
 
             Spacer(modifier = Modifier.weight(1.0f))
 

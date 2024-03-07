@@ -1,5 +1,6 @@
 rootProject.name = "Multiplatform"
-include(":composeApp")
+include(":sample:composeApp")
+include(":lib")
 
 pluginManagement {
     repositories {
